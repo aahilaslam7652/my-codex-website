@@ -159,6 +159,12 @@ svg {
   font-size: 0.72rem;
 }
 
+.brand-logo {
+  height: 42px;
+  width: auto;
+  border-radius: 8px; /* optional */
+}
+
 .site-nav {
   display: flex;
   align-items: center;
