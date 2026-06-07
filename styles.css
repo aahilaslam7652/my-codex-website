@@ -397,7 +397,7 @@ h1 {
   justify-content: center;
 
   max-width: 900px;   /* ✅ controls row balance */
-  gap: 10px;
+  gap: 14px;
 
   padding: 1rem;
   border-block: 1px solid rgba(194, 255, 232, 0.12);
