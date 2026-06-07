@@ -48,7 +48,23 @@
 }
 </script>
   </head>
-  <body>
+
+<script>
+const hero = document.querySelector(".hero");
+const pc = document.querySelector(".hero-pc");
+const xbox = document.querySelector(".hero-xbox");
+
+hero.addEventListener("mousemove", (e) => {
+  const x = (e.clientX / window.innerWidth - 0.5) * 20;
+  const y = (e.clientY / window.innerHeight - 0.5) * 20;
+
+  pc.style.transform = `translate(${x * 0.6}px, ${y * 0.6}px)`;
+  xbox.style.transform = `translate(${x}px, ${y}px) rotate(-12deg)`;
+});
+</script>
+
+	
+	<body>
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header" data-header>
