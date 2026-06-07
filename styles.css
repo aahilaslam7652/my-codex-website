@@ -160,14 +160,17 @@ svg {
 }
 
 
+
 .brand-logo {
   height: 42px;
-  width: auto;
+  width: 42px;
   object-fit: contain;
-  background: none;
-  border: none;
-  padding: 0;
+  padding: 4px;
+  border: 1px solid rgba(98, 255, 183, 0.4);
+  border-radius: 8px;
+  background: rgba(9, 18, 17, 0.8);
 }
+
 
 
 .site-nav {
