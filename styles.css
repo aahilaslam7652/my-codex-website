@@ -278,11 +278,13 @@ svg {
 .hero-stats {
   position: absolute;
   left: 50%;
-  bottom: 130px;
+  bottom: 120px;
   transform: translateX(-50%);
 
   display: flex;
-  gap: 40px; /* ✅ more breathing room */
+  justify-content: center;
+  gap: 0; /* we'll control spacing inside */
+
 
   padding: 14px 24px;
   border-radius: 14px;
@@ -292,6 +294,10 @@ svg {
 
   backdrop-filter: blur(12px);
   box-shadow: 0 0 20px rgba(98, 255, 183, 0.12);
+}
+
+.hero-stats:hover {
+  box-shadow: 0 0 30px rgba(98, 255, 183, 0.2);
 }
 
 
