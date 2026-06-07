@@ -1357,5 +1357,60 @@ h1 {
     object-fit: cover !important; /* Crops images cleanly without distortion */
     display: block !important;
 }
+/* =======================================================
+   3D COMPONENT SPLIT LAYOUT
+   ======================================================= */
+
+/* Force your existing hero-inner container to split 50/50 side-by-side */
+.hero-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Constrain your text contents strictly to the left column */
+.hero-left {
+    flex: 1;
+    max-width: 50%;
+    z-index: 5; /* Keeps text clickable and above backgrounds */
+}
+
+/* Create the dimension box for your 3D canvas window on the right */
+.hero-right {
+    flex: 1;
+    max-width: 50%;
+    height: 520px; /* Adjust this value if you want the 3D PC larger or smaller */
+    position: relative;
+    z-index: 5;
+}
+
+/* Make sure the 3D environment scales perfectly inside its container box */
+#canvas-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Responsive Rule: Stacks text above the 3D model on mobile phones */
+@media (max-width: 768px) {
+    .hero-inner {
+        flex-direction: column !important;
+    }
+    .hero-left, .hero-right {
+        max-width: 100% !important;
+        width: 100%;
+    }
+    .hero-right {
+        height: 350px;
+        margin-top: 20px;
+    }
+}
 
 
