@@ -424,6 +424,12 @@ h1 {
 }
 
 
+.hero-service-strip span:last-child {
+  border-color: rgba(98, 255, 183, 0.6);
+  box-shadow: 0 0 15px rgba(98, 255, 183, 0.3);
+}
+
+
 .intro-band {
   border-block: 1px solid rgba(255, 255, 255, 0.08);
   background: #0d1514;
