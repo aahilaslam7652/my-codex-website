@@ -245,7 +245,7 @@ svg {
   display: grid;
   align-items: center;
   overflow: hidden;
-  padding: 6.5rem 1rem 4.5rem;
+  padding: 5.8rem 1rem 5rem;
   isolation: isolate;
 }
 
@@ -292,7 +292,7 @@ p {
 }
 
 h1 {
-  max-width: 820px;
+  max-width: 750px;
   margin-bottom: 1rem;
   color: #fff;
 
