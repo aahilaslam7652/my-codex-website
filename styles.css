@@ -254,9 +254,9 @@ svg {
     linear-gradient(0deg, #07100f 0%, rgba(7, 16, 15, 0.18) 32%, rgba(7, 16, 15, 0.1) 70%, #07100f 100%);
 }
 
+
 .hero-inner {
-  width: min(var(--max), calc(100vw - 2rem));
-  margin: 0 auto;
+  max-width: 720px;
 }
 
 .eyebrow {
