@@ -268,25 +268,44 @@ svg {
   right: 5%;
   bottom: 80px;
   width: 420px;
-  
-  animation: glowPulse 4s ease-in-out infinite;
-}
 
-@keyframes glowPulse {
-  0%,100% { filter: brightness(1); }
-  50% { filter: brightness(1.2); }
-}
+  pointer-events: none;
 
-  filter: 
+  /* ✅ Combined ALL effects properly */
+  filter:
+    brightness(1)
+    hue-rotate(-20deg)
+    saturate(1.1)
     drop-shadow(0 0 25px rgba(98,255,183,0.3))
-    hue-rotate(-20deg) saturate(1.1);
-
-
     drop-shadow(0 0 40px rgba(98,255,183,0.35))
     drop-shadow(0 0 80px rgba(64,233,255,0.2));
 
-  pointer-events: none;
+  animation: glowPulse 4s ease-in-out infinite;
 }
+
+/* ✅ Only animate brightness (important) */
+@keyframes glowPulse {
+  0%, 100% {
+    filter:
+      brightness(1)
+      hue-rotate(-20deg)
+      saturate(1.1)
+      drop-shadow(0 0 25px rgba(98,255,183,0.3))
+      drop-shadow(0 0 40px rgba(98,255,183,0.35))
+      drop-shadow(0 0 80px rgba(64,233,255,0.2));
+  }
+
+  50% {
+    filter:
+      brightness(1.2)
+      hue-rotate(-20deg)
+      saturate(1.1)
+      drop-shadow(0 0 30px rgba(98,255,183,0.45))
+      drop-shadow(0 0 60px rgba(64,233,255,0.25))
+      drop-shadow(0 0 100px rgba(64,233,255,0.2));
+  }
+}
+``
 
 
 .hero::after {
