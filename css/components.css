@@ -1,7 +1,291 @@
-.btn {}
-.btn-primary {}
-.btn-secondary {}
+/* =======================================================
+   DESIGN TOKENS
+   ======================================================= */
 
-.card {}
-.stat {}
-``
+:root {
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+
+  /* Typography */
+  --text-sm: 0.85rem;
+  --text-base: 1rem;
+  --text-lg: 1.2rem;
+  --text-xl: 1.4rem;
+  --text-hero: clamp(2.2rem, 4.5vw, 3.4rem);
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+}
+
+/* Light mode override */
+:root[data-theme="light"] {
+  --bg: #f7fbfa;
+  --text: #05201a;
+  --panel: #ffffff;
+  --muted: #4a6660;
+}
+
+
+/* =======================================================
+   BUTTON SYSTEM
+   ======================================================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+  padding: 0 var(--space-md);
+
+  border-radius: var(--radius-md);
+  font-weight: 900;
+  font-size: var(--text-base);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Interaction */
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0) scale(0.97);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
+
+/* Variants */
+.btn-primary {
+  background: var(--green);
+  color: #04100d;
+  box-shadow: 0 15px 42px rgba(98,255,183,0.25);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 20px 50px rgba(98,255,183,0.35);
+}
+
+.btn-secondary {
+  border: 1px solid rgba(64,233,255,0.42);
+  background: rgba(6,20,20,0.7);
+  color: #e9fffb;
+  opacity: 0.85;
+}
+
+.btn-secondary:hover {
+  opacity: 1;
+}
+
+
+/* =======================================================
+   STATS
+   ======================================================= */
+
+.stat {
+  text-align: center;
+}
+
+.stat strong {
+  display: block;
+  font-size: var(--text-xl);
+  font-weight: 900;
+  color: var(--green);
+}
+
+.stat span {
+  font-size: var(--text-sm);
+  color: var(--muted);
+}
+
+
+/* =======================================================
+   ICONS
+   ======================================================= */
+
+.mini-icon,
+.service-icon {
+  display: grid;
+  place-items: center;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: var(--radius-md);
+
+  background: rgba(98,255,183,0.1);
+  color: var(--green);
+
+  transition: transform 0.25s ease;
+}
+
+
+/* =======================================================
+   CARDS (SYSTEM)
+   ======================================================= */
+
+.card {
+  position: relative;
+  overflow: hidden;
+
+  padding: var(--space-md);
+  min-height: 220px;
+
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(194,255,232,0.13);
+
+  background:
+    linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015)),
+    var(--panel);
+
+  box-shadow: 0 22px 70px rgba(0,0,0,0.16);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Glow line */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: auto 1rem 0;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(64,233,255,0.7),
+    transparent
+  );
+
+  opacity: 0.45;
+}
+
+/* Hover */
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(98,255,183,0.42);
+
+  box-shadow:
+    0 22px 70px rgba(0,0,0,0.18),
+    0 0 0 1px rgba(98,255,183,0.3),
+    0 0 25px rgba(64,233,255,0.08);
+}
+
+/* Variant */
+.card-highlight {
+  background:
+    linear-gradient(145deg, rgba(98,255,183,0.12), rgba(255,204,102,0.08)),
+    #13201d;
+}
+
+/* Apply card system */
+.service-card,
+.review-card {
+  composes: card;
+}
+
+
+/* =======================================================
+   REVIEW COMPONENT
+   ======================================================= */
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feature-review {
+  border-color: rgba(98,255,183,0.38);
+  background:
+    linear-gradient(145deg, rgba(98,255,183,0.12), rgba(64,233,255,0.04)),
+    #111b19;
+}
+
+.rating {
+  display: flex;
+  gap: 0.3rem;
+  margin-bottom: var(--space-md);
+}
+
+.rating span {
+  width: 17px;
+  height: 17px;
+
+  background: var(--amber);
+
+  clip-path: polygon(
+    50% 0,62% 34%,98% 35%,69% 56%,79% 91%,
+    50% 70%,21% 91%,31% 56%,2% 35%,38% 34%
+  );
+
+  filter: drop-shadow(0 0 8px rgba(255,204,102,0.45));
+  transition: transform 0.2s ease;
+}
+
+.review-card:hover .rating span {
+  transform: scale(1.15);
+}
+
+.review-card p {
+  color: #ebfaf6;
+  font-size: var(--text-lg);
+}
+
+.review-card footer {
+  color: #fff;
+  font-weight: 900;
+}
+
+.review-card footer span {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: var(--text-sm);
+  color: var(--muted);
+}
+
+
+/* =======================================================
+   MICRO INTERACTIONS
+   ======================================================= */
+
+.service-card:hover .service-icon {
+  transform: scale(1.05) rotate(1deg);
+}
+
+
+/* =======================================================
+   REDUCED MOTION
+   ======================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .card,
+  .rating span,
+  .service-icon {
+    transition: none !important;
+  }
+}
