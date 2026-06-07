@@ -572,6 +572,15 @@ h1 {
   grid-row: span 2;
 }
 
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  back
+
 .console-photo-media {
   position: relative;
   flex: 1 1 auto;
