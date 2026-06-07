@@ -245,7 +245,7 @@ svg {
   display: grid;
   align-items: center;
   overflow: hidden;
-  padding: 5.8rem 1rem 5rem;
+  padding: 5.2rem 1rem 5rem;
   isolation: isolate;
 }
 
@@ -296,7 +296,7 @@ h1 {
   margin-bottom: 1rem;
   color: #fff;
 
-  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
   line-height: 1.1;
 
   letter-spacing: 0;
