@@ -9,9 +9,14 @@
     <meta name="google-site-verification" content="FgA9vmD-wUWG_nZADQ7WTRyE2lKlosJnhaKEBo4xvJY" />
     <meta name="theme-color" content="#07100f" />
     <link rel="stylesheet" href="styles.css" />
-	      <!-- Force load the 3D engine right at the start -->
-    <script src="https://cloudflare.com"></script>
-    <script src="https://cloudflare.com"></script>
+<!-- Line 10 --> <meta name="theme-color" content="#07100f" />
+<!-- Line 11 --> <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google's official, highly secure 3D player bundle -->
+    <script type="module" src="https://googleapis.com"></script>
+
+<!-- Line 15 --> </head>
+
 </head>
 
 <script type="application/ld+json">
@@ -134,20 +139,25 @@ Computer, laptop, Mac, phone & console repairs
                 <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />
                 <circle cx="12" cy="10" r="3" />
               </svg>
-              592 Acklam Road, Middlesbrough, TS5 8BQ
-				  </span>
-    </div> <!-- This closes your hero-meta block -->
+            <!-- ... Your WhatsApp and location address lines are up here ... -->
+        <p class="hero-location">592 Acklam Road, Middlesbrough, TS5 8BQ</p>
+        
+    </div> <!-- This closes your hero-left text block -->
 
-    </div> <!-- 1. PASTE THIS HERE to close the "hero-left" block you opened earlier -->
+    <!-- PASTE GOOGLE'S 3D MODEL BOX EXACTLY HERE -->
+    <div class="hero-right">
+        <model-viewer 
+            src="pc-model.glb" 
+            autoplay 
+            camera-controls 
+            auto-rotate 
+            interaction-prompt="none"
+            style="width: 100%; height: 100%; background: transparent;">
+        </model-viewer>
+    </div>
 
-    <!-- 2. PASTE THIS HERE to create your new 3D model box -->
-   <!-- 1. PASTE THIS HERE to create your new 3D model box -->
-<div class="hero-right">
-    <object data="pc-model.glb" type="model/gltf-binary" width="100%" height="100%">
-        <param name="autoplay" value="true">
-        <param name="camera-controls" value="true">
-    </object>
-</div>
+</div> <!-- This is the closing tag for hero-inner -->
+
 
 
 </div> <!-- This is your original closing tag for "hero-inner" -->
@@ -539,9 +549,6 @@ Computer, laptop, Mac, phone & console repairs
       <p>&copy; <span data-year></span> TeessideTek. Tech repairs in Middlesbrough.</p>
       <a href="#top">Back to top</a>
     </footer>
-      <!-- Use these highly stable CDNs instead of jsdelivr -->
-    <script src="https://cloudflare.com"></script>
-    <script src="https://cloudflare.com"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
