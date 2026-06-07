@@ -243,9 +243,9 @@ svg {
   position: relative;
   min-height: 91svh;
   display: grid;
-  align-items: center;
+  align-items: start;
   overflow: hidden;
-  padding: 1.2rem 1rem 5rem;
+  padding: 5.2rem 1rem 5rem;
   isolation: isolate;
 }
 
