@@ -47,16 +47,18 @@
   position: relative;
 }
 .hero-left {
-  max-width: 700px;
+  position: relative;
+  max-width: 800px;
   margin: 0 auto;
-  text-align: center;
+  text-align: center; 
+  z-index: 5;
 }
 .hero-right {
   position: absolute;
   right: 0;
   bottom: 0;
+  width: 50%;
   height: 100%;
-  width: 50%;   /* ✅ controls balance */
   pointer-events: none;
 }
 
