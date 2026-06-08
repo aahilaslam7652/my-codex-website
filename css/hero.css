@@ -18,13 +18,13 @@
 .hero::after {
   content: "";
   position: absolute;
-  right: 10%;
-  bottom: 80px;
+  right: 12%;
+  bottom: 60px;
 
-  width: 480px;
-  height: 480px;
+  width: 520px;
+  height: 520px;
 
-  background: radial-gradient(circle, rgba(98,255,183,0.18), transparent 70%);
+  background: radial-gradient(circle, rgba(98,255,183,0.2), transparent 70%);
 
   transform: translateY(var(--scrollY, 0px));
   transition: transform 0.15s ease;
@@ -49,8 +49,8 @@
 .hero-overlay {
   z-index: -2;
   background:
-    linear-gradient(90deg, rgba(5,8,7,0.9), rgba(5,8,7,0.5) 45%, rgba(5,8,7,0.85)),
-    linear-gradient(0deg, #07100f 0%, rgba(7,16,15,0.15) 30%, rgba(7,16,15,0.08) 70%, #07100f 100%);
+    linear-gradient(90deg, rgba(5,8,7,0.92), rgba(5,8,7,0.55) 45%, rgba(5,8,7,0.88)),
+    linear-gradient(0deg, #07100f 0%, rgba(7,16,15,0.18) 30%, rgba(7,16,15,0.08) 70%, #07100f 100%);
 }
 
 
@@ -91,13 +91,13 @@
 
 
 /* =======================================================
-   VISUALS
+   VISUALS (FIXED PROPERLY)
    ======================================================= */
 
 /* Background logo */
 .hero-logo {
   position: absolute;
-  left: -40px;
+  left: -20px;
   top: 50%;
   transform: translateY(-50%);
 
@@ -109,25 +109,29 @@
   pointer-events: none;
 }
 
-/* LEFT tech graphic (balanced + parallax ready) */
+/* ✅ LEFT BACKGROUND GRAPHIC — FIXED */
 .hero-bg,
 .hero-left svg {
   position: absolute;
 
-  left: -80px;
+  left: -10px; /* ✅ not off-screen anymore */
   top: 50%;
 
-  transform: translateY(-50%) translate(var(--mouseX, 0), var(--mouseY, 0));
+  transform:
+    translateY(-50%)
+    translate(var(--mouseX, 0), var(--mouseY, 0));
 
-  width: 580px;
+  width: 780px;          /* ✅ MUCH larger = fills space */
+  max-width: none;
 
-  opacity: 0.06;
+  opacity: 0.12;         /* ✅ visible but still soft */
+
   z-index: 1;
-
   pointer-events: none;
 
   transition: transform 0.1s ease;
 }
+
 
 /* PC (main visual) */
 .hero-pc {
@@ -137,7 +141,10 @@
   width: 100%;
   max-width: 470px;
 
-  transform: translate(calc(var(--mouseX, 0) * 0.3), calc(var(--mouseY, 0) * 0.3));
+  transform: translate(
+    calc(var(--mouseX, 0) * 0.3),
+    calc(var(--mouseY, 0) * 0.3)
+  );
 
   pointer-events: none;
 
@@ -155,14 +162,17 @@
 /* Xbox accent */
 .hero-xbox {
   position: absolute;
-  right: 16%;
-  bottom: 150px;
+  right: 15%;
+  bottom: 140px;
 
-  width: 130px;
+  width: 135px;
 
   transform:
     rotate(-12deg)
-    translate(calc(var(--mouseX, 0) * 0.4), calc(var(--mouseY, 0) * 0.4));
+    translate(
+      calc(var(--mouseX, 0) * 0.4),
+      calc(var(--mouseY, 0) * 0.4)
+    );
 
   opacity: 0.9;
 
@@ -257,7 +267,7 @@
 }
 
 .hero-stats:hover {
-  transform: translateX(-50%) scale(1.02);
+  transform: translateX(-50%) scale(1.04);
 }
 
 
@@ -296,7 +306,7 @@
 
 @keyframes floatXbox {
   0%,100% { transform: translateY(0) rotate(-12deg); }
-  50% { transform: translateY(-12px) rotate(-12deg); }
+  50% { transform: translateY(-14px) rotate(-12deg); }
 }
 
 @keyframes fadeUp {
