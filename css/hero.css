@@ -41,6 +41,7 @@
 
 /* === LAYOUT === */
 .hero-inner {
+  padding-top: 60px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +111,7 @@
   width: 140px;
   height: auto;
   right: 60px;
-  bottom: 80px;
+  bottom: -120px;
   opacity: 0.8;
   transform: rotate(-10deg);
   z-index: 4;
