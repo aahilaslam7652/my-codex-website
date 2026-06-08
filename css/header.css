@@ -31,6 +31,22 @@
     box-shadow 0.3s ease,
     backdrop-filter 0.3s ease;
 }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.brand strong {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.brand small {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
 
 /* Scroll state */
 .site-header.is-scrolled {
