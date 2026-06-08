@@ -11,7 +11,10 @@
   align-items: center;
   gap: 0.6rem; /* was 1rem */
 
-  width: min(100% - 2rem, var(--max));
+  
+width: fit-content;
+max-width: calc(100% - 2rem);
+
   margin: 1rem auto 0;
 
   padding: 0.5rem 0.8rem;
