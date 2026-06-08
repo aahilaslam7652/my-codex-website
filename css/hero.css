@@ -166,7 +166,7 @@
   width: 100%;
   max-width: 380px;   /* ✅ key fix (was too big before) */
   height: auto;
-
+  outline: 2px solid red;
   position: absolute;
   right: 80px;        /* ✅ pushes it right */
   bottom: -40px;      /* ✅ lowers it like before */
