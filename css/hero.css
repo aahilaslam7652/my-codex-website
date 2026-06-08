@@ -102,13 +102,18 @@
 }
 
 
+
 .hero-right {
+  position: relative;
+  flex: 1;
+
   display: flex;
-  justify-content: flex-end;  /* ✅ pushes to right */
+  justify-content: center;  /* ✅ center instead of pushing too far */
   align-items: center;
 
-  position: relative;
+  min-height: 420px;
 }
+
 
 
 
@@ -156,12 +161,13 @@
 
 
 
-/* Main PC */
+
+/* ✅ MAIN PC — toned down */
 .hero-pc {
   width: 100%;
-  max-width: 420px;   /* ✅ smaller */
+  max-width: 380px;   /* ✅ MUCH smaller (this fixes the “massive” issue) */
   height: auto;
-
+  transform: translateX(40px); /* ✅ pushes slightly right (makes layout balanced) */
   position: relative;
   z-index: 3;
 }
@@ -181,14 +187,18 @@
 }
 
 
-/* Xbox */
+
+/* ✅ XBOX — subtle accent */
 .hero-xbox {
   position: absolute;
-  right: 10%;
-  bottom: 120px;
 
-  width: 110px;       /* ✅ smaller */
-  opacity: 0.9;
+  right: 5%;          /* ✅ pulled closer */
+  bottom: 110px;
+
+  width: 95px;        /* ✅ smaller like before */
+  opacity: 0.85;
+
+  transform: rotate(-10deg);
 
   z-index: 2;
 }
