@@ -52,6 +52,11 @@
   height: 40px;
 }
 
+.header-call svg {
+  width: 20px;
+  height: 20px;
+}
+
 /* Scroll state */
 .site-header.is-scrolled {
   background: rgba(6, 12, 12, 0.95);
