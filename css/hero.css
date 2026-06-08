@@ -193,15 +193,17 @@
 .hero-xbox {
   position: absolute;
 
-  right: 140px;       /* ✅ sits near PC */
-  bottom: 120px;
+  width: 140px !important;   /* ✅ HARD cap size */
+  height: auto;
 
-  width: 90px;        /* ✅ small accent again */
+  right: 60px;
+  bottom: 80px;
 
-  opacity: 0.85;
+  opacity: 0.8;
+
   transform: rotate(-10deg);
 
-  z-index: 2;
+  z-index: 4;
 }
 
 
