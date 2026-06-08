@@ -92,7 +92,6 @@
 
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0 1rem;
 }
 
 .hero-left {
@@ -102,17 +101,15 @@
   z-index: 5;
 }
 
+
 .hero-right {
-  flex: 1;
-  position: relative;
-
   display: flex;
+  justify-content: flex-end;  /* ✅ pushes to right */
   align-items: center;
-  justify-content: center;
 
-  min-height: 420px;
-  z-index: 5;
+  position: relative;
 }
+
 
 
 /* =======================================================
