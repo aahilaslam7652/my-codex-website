@@ -96,10 +96,28 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-
   width: 420px;
-
   opacity: 0.06;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ✅ Background tech graphic */
+.hero-left {
+  position: relative; /* REQUIRED */
+}
+
+.hero-left svg {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 600px;
+
+  opacity: 0.08;
   z-index: 1;
 
   pointer-events: none;
