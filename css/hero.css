@@ -94,7 +94,7 @@
   width: 480px;
   height: auto;
   right: 40px;
-  bottom: -60px;
+  bottom: -120px;
   z-index: 3;
   pointer-events: none;
   filter:
@@ -111,7 +111,7 @@
   width: 140px;
   height: auto;
   right: 60px;
-  bottom: -120px;
+  bottom: -220px;
   opacity: 0.8;
   transform: rotate(-10deg);
   z-index: 4;
