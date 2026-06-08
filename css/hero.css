@@ -14,16 +14,20 @@
   isolation: isolate;
 }
 
+/* moving glow */
 .hero::after {
   content: "";
   position: absolute;
-  right: 3%;
-  bottom: 50px;
+  right: 10%;
+  bottom: 80px;
 
-  width: 450px;
-  height: 450px;
+  width: 480px;
+  height: 480px;
 
-  background: radial-gradient(circle, rgba(98,255,183,0.15), transparent 70%);
+  background: radial-gradient(circle, rgba(98,255,183,0.18), transparent 70%);
+
+  transform: translateY(var(--scrollY, 0px));
+  transition: transform 0.15s ease;
 }
 
 
@@ -45,8 +49,8 @@
 .hero-overlay {
   z-index: -2;
   background:
-    linear-gradient(90deg, rgba(5,8,7,0.9), rgba(5,8,7,0.47) 48%, rgba(5,8,7,0.82)),
-    linear-gradient(0deg, #07100f 0%, rgba(7,16,15,0.18) 32%, rgba(7,16,15,0.1) 70%, #07100f 100%);
+    linear-gradient(90deg, rgba(5,8,7,0.9), rgba(5,8,7,0.5) 45%, rgba(5,8,7,0.85)),
+    linear-gradient(0deg, #07100f 0%, rgba(7,16,15,0.15) 30%, rgba(7,16,15,0.08) 70%, #07100f 100%);
 }
 
 
@@ -59,7 +63,7 @@
   justify-content: space-between;
   align-items: center;
 
-  gap: 2rem;
+  gap: 3rem;
 
   max-width: var(--max);
   margin: 0 auto;
@@ -67,6 +71,7 @@
 }
 
 .hero-left {
+  position: relative;
   flex: 1;
   max-width: 520px;
   z-index: 5;
@@ -74,15 +79,14 @@
 
 .hero-right {
   flex: 1;
+  position: relative;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  position: relative;
-  z-index: 5;
-
   min-height: 420px;
+  z-index: 5;
 }
 
 
@@ -93,34 +97,36 @@
 /* Background logo */
 .hero-logo {
   position: absolute;
-  left: 0;
+  left: -40px;
   top: 50%;
   transform: translateY(-50%);
+
   width: 420px;
-  opacity: 0.06;
+
+  opacity: 0.05;
   z-index: 1;
+
   pointer-events: none;
 }
 
-/* ✅ Background tech graphic */
-.hero-left {
-  position: relative; /* REQUIRED */
-}
-
+/* LEFT tech graphic (balanced + parallax ready) */
+.hero-bg,
 .hero-left svg {
   position: absolute;
 
-  left: 50%;
+  left: -80px;
   top: 50%;
 
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%) translate(var(--mouseX, 0), var(--mouseY, 0));
 
-  width: 600px;
+  width: 580px;
 
-  opacity: 0.08;
+  opacity: 0.06;
   z-index: 1;
 
   pointer-events: none;
+
+  transition: transform 0.1s ease;
 }
 
 /* PC (main visual) */
@@ -129,10 +135,11 @@
   z-index: 3;
 
   width: 100%;
-  max-width: 460px;
+  max-width: 470px;
+
+  transform: translate(calc(var(--mouseX, 0) * 0.3), calc(var(--mouseY, 0) * 0.3));
 
   pointer-events: none;
-  transition: transform 0.25s ease;
 
   filter:
     brightness(1)
@@ -148,17 +155,20 @@
 /* Xbox accent */
 .hero-xbox {
   position: absolute;
-  right: 12%;
-  bottom: 140px;
+  right: 16%;
+  bottom: 150px;
 
   width: 130px;
 
-  transform: rotate(-12deg);
-  opacity: 0.85;
+  transform:
+    rotate(-12deg)
+    translate(calc(var(--mouseX, 0) * 0.4), calc(var(--mouseY, 0) * 0.4));
+
+  opacity: 0.9;
 
   z-index: 2;
 
-  transition: transform 0.25s ease;
+  pointer-events: none;
 
   filter:
     brightness(0.9)
@@ -180,7 +190,6 @@
   color: var(--green);
   font-size: 0.78rem;
   font-weight: 900;
-
   text-transform: uppercase;
 }
 
@@ -200,7 +209,6 @@
 
 .hero-copy {
   max-width: 650px;
-
   color: #d9ebe6;
   font-size: 1.32rem;
 
@@ -216,7 +224,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem;
-
   margin-top: 2rem;
 }
 
