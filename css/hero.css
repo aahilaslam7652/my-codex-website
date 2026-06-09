@@ -6,22 +6,10 @@
   align-items: start;
   overflow: hidden;
 
-  padding: 5rem 1rem 3rem; /* reduced bottom */
+  padding: 5rem 1rem 8em; /* reduced bottom */
 }
 
-/* glow */
-.hero::after {
-  content: "";
-  position: absolute;
-  right: 12%;
-  bottom: -40px; /* bleed into next section */
-  width: 520px;
-  height: 520px;
-  background: radial-gradient(circle, rgba(98,255,183,0.2), transparent 70%);
-  transform: translateY(var(--scrollY, 0px));
-  transition: transform 0.15s ease;
-  pointer-events: none;
-}
+
 
 /* === HERO OVERLAY (SOFT — NOT BLOCKING) === */
 .hero-overlay {
@@ -39,21 +27,26 @@
 /* === LAYOUT === */
 .hero-inner {
   display: flex;
-  justify-content: center;
+    justify-content: flex-start;   /* ✅ KEY FIX */
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+    padding: 0 2rem;
   z-index: 5;
+  
+  padding-left: 2rem;
+  padding-right: 2rem;
+
 }
 
 .hero-left {
   position: relative;
-  max-width: 650px;
   text-align: left;
-  z-index: 5;
+  padding-right: clamp(260px, 28vw, 480px);
   display: flex;
   flex-direction: column;
+  z-index: 5;
 }
 
 .hero-right {
@@ -93,10 +86,12 @@
 /* === MAIN VISUAL === */
 .hero-pc {
   position: absolute;
-  width: 420px;
+    transform: translateX(-40px);
+      transform: translateX(-40px) translateY(-10px);
+  width: 360px;
   max-width: 45vw;
-  right: -320px;
-  bottom: -100px;
+  right: 200px;
+  bottom: -60px;
   z-index: 3;
   pointer-events: none;
 
@@ -123,6 +118,7 @@
   margin: 0;
   margin-bottom: 0.7rem;
   color: #fff;
+  max-width: 20ch;
   font-size: clamp(2.2rem, 4.5vw, 3.4rem);
   line-height: 1.1;
   animation: fadeUp 0.8s ease;
