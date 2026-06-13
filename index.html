@@ -3,133 +3,154 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-<title>Computer & Laptop Repairs, Apple & Gaming PCs in Teesside | TeessideTek</title>
-
-<meta name="description" content="Computer repairs, gaming PC builds, and tech support in Middlesbrough. Fast diagnostics and honest pricing." />
-<meta name="theme-color" content="#07100f" />
-
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/header.css">
-<link rel="stylesheet" href="css/hero.css">
-<link rel="stylesheet" href="css/components.css">
-<link rel="stylesheet" href="css/sections.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Computer & Laptop Repairs, Apple & Gaming PCs in Teesside | TeessideTek</title>
+  <meta name="description" content="Computer repairs, gaming PC builds, and tech support in Middlesbrough. Fast diagnostics and honest pricing.">
+  <meta name="theme-color" content="#07100f">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/assurance.css">
+  <link rel="stylesheet" href="css/location.css">
+  <link rel="stylesheet" href="css/reviews.css">
+  <link rel="stylesheet" href="css/process.css">
+  <link rel="stylesheet" href="css/contacts.css">
+  <link rel="stylesheet" href="css/pricing.css">
+  <link rel="stylesheet" href="css/techstrip.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
+<script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
 <body>
 
 <canvas id="tech-canvas" class="global-canvas"></canvas>
 
-<header class="site-header">
+<!-- HEADER -->
+<header class="site-header" id="header" data-header>
+
   <a class="brand" href="#top">
     <img src="assets/logo_icon.png" class="brand-logo" alt="TeessideTek logo">
     <strong>TeessideTek</strong>
   </a>
 
-  <nav class="site-nav">
+  <!-- MOBILE MENU BUTTON -->
+  <div class="menu-toggle" id="menuToggle" data-menu-toggle>
+    ☰
+  </div>
+
+  <!-- NAV -->
+  <nav class="site-nav" id="nav" data-site-nav>
     <a href="#services">Services</a>
-    <a href="#console-gallery">Gallery</a>
     <a href="#process">Process</a>
+    <a href="#pricing">Pricing</a>
     <a href="#reviews">Reviews</a>
-    <a href="#contact">Contact</a>
+    <a href="#faq">FAQ</a>
+    <a href="#location">Location</a>
+    <a href="#contact" class="cta">Contact</a>
   </nav>
 
-  <a class="header-call" href="tel:+447859897698">07859897698</a>
+  <a class="header-call" href="tel:+447859897698">
+    07859897698
+  </a>
+
 </header>
+
 
 <main>
 
 <!-- HERO -->
 <section class="hero" id="top">
-  <div class="hero-overlay"></div>
-
   <div class="hero-inner container">
-    <div class="hero-left">
+    <div>
+      
 
-      <h1>
-        Computer & Gaming&nbsp;PC<br>
-        Specialists in&nbsp;Teesside
-      </h1>
+<h2 class="section-title">
+  <span>Computer & Gaming PC</span>
+  <span>Specialists in Teesside</span>
+</h2>
 
+ 
+
+      <p class="eyebrow">
+        Phones, laptops, consoles, custom builds and advanced repairs - all covered.
+      </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="tel:+447859897698">Call</a>
         <a class="btn btn-secondary" href="mailto:teessidetek@gmail.com">Email</a>
         <a class="btn btn-secondary" href="https://wa.me/447859897698">WhatsApp</a>
       </div>
-
-      <div class="hero-guarantee">
-        <div class="hero-guarantee-row">
-          <span>✅ No Fix No Fee</span>
-          <span>3–12 Month Warranty</span>
-          <span>⚡ Same-Day Repairs</span>
-        </div>
-        <div class="hero-guarantee-row">
-          <span>🏠 Home Visits Available</span>
-          <span>✔ Free Diagnosis</span>
-          <span>No Obligation Quotes</span>
-        </div>
-      </div>
-
       <div class="hero-stats">
-        <div class="hero-stat">
-          <strong>2500+</strong>
-          <span>Repairs Completed</span>
-        </div>
-        <div class="hero-stat">
-          <strong>Same-Day</strong>
-          <span>Available</span>
-        </div>
-        <div class="hero-stat">
-          <strong>1000+ 5★</strong>
-          <span>Customer Reviews</span>
-        </div>
+        <div class="hero-stat"><strong>2500+</strong><span>Repairs Completed</span></div>
+        <div class="hero-stat"><strong>Same-Day</strong><span>Available</span></div>
+        <div class="hero-stat"><strong>No Fix, No Fee</strong><span>Zero risk repairs</span></div>
       </div>
-
-      <div class="hero-meta">
-        <span>592 Acklam Road, Middlesbrough, TS5 8BQ</span>
-      </div>
-
-      <div class="hero-service-strip">
-        <span>Phones</span>
-        <span>Tablets</span>
-        <span>Macs</span>
-        <span>Console</span>
-        <span>Data Recovery</span>
-        <span>Computers</span>
-      </div>
-
     </div>
 
-    <div class="hero-trust">
-      <a href="#" class="trust-item">
-        <i class="fab fa-google"></i>
-        <div>
-          <strong>5.0 Google Reviews</strong>
-          <span>600+ customers</span>
-        </div>
-      </a>
-
-      <a href="#" class="trust-item">
-        <i class="fa-solid fa-star"></i>
-        <div>
-          <strong>4.9 Trustpilot</strong>
-          <span>Rated Excellent</span>
-        </div>
-      </a>
-
-      <a href="#" class="trust-item">
-        <i class="fas fa-check-circle"></i>
-        <div>
-          <strong>Yell Verified</strong>
-          <span>Trusted local business</span>
-        </div>
-      </a>
+    <div class="hero-right"> <div class="hero-reviews">
+        <a href="#" class="hero-reviews-item">
+          <div class="hero-reviews-top"><i class="fab fa-google"></i><span>Google</span></div>
+          <div class="hero-reviews-rating"><i class="fas fa-star"></i><strong>5.0</strong></div>
+          <span class="hero-reviews-meta">600+ Reviews</span>
+        </a>
+        <a href="#" class="hero-reviews-item">
+          <div class="hero-reviews-top"><i class="fas fa-check-circle"></i><span>Yell</span></div>
+          <div class="hero-reviews-rating"><i class="fas fa-star"></i><strong>5.0</strong></div>
+          <span class="hero-reviews-meta">190+ Reviews</span>
+        </a>
+        <a href="#" class="hero-reviews-item">
+          <div class="hero-reviews-top"><i class="fa-solid fa-star"></i><span>Trustpilot</span></div>
+          <div class="hero-reviews-rating"><i class="fas fa-star"></i><strong>4.9</strong></div>
+          <span class="hero-reviews-meta">220+ Reviews</span>
+        </a>
+        <a href="#" class="hero-reviews-item">
+          <div class="hero-reviews-top"><i class="fab fa-facebook"></i><span>Facebook</span></div>
+          <div class="hero-reviews-rating"><i class="fas fa-star"></i><strong>5.0</strong></div>
+          <span class="hero-reviews-meta">100+ Reviews</span>
+        </a>
+      </div>
+      <img src="assets/hero_pc.png"
+           class="hero-pc"
+           alt="Custom gaming PC build"
+           loading="eager"
+           decoding="async">
     </div>
 
-    <div class="hero-right">
-      <img src="assets/hero_pc.png" class="hero-pc" alt="Gaming PC">
+  </div>
+</section>
+
+
+<!-- ASSURANCE -->
+<section class="section assurance-section">
+  <div class="container">
+
+    <div class="section-inner">
+
+
+
+      <div class="section-heading">
+        <h2 class="section-title">Honest Repairs No Surprises.</h2>
+      </div>
+
+      <div class="assurance-grid">
+        <div class="assurance-card"><span class="assurance-icon">✅</span><span>No Fix, No Fee</span></div>
+        <div class="assurance-card"><span class="assurance-icon">⚡</span><span>Same-Day Repairs</span></div>
+        <div class="assurance-card"><span class="assurance-icon">✔</span><span>Free Diagnosis & Quotes</span></div>
+        <div class="assurance-card"><span class="assurance-icon">🛡</span><span>3–12 Month Warranty</span></div>
+        <div class="assurance-card"><span class="assurance-icon">🔒</span><span>Authorised Work Only</span></div>
+        <div class="assurance-card"><span class="assurance-icon">💷</span><span>Price Match Guarantee</span></div>
+        <div class="assurance-card"><span class="assurance-icon">🏠</span><span>Home Visits</span></div>
+        <div class="assurance-card"><span class="assurance-icon">🕒</span><span>24hr Support</span></div>
+      </div>
+
     </div>
 
   </div>
@@ -137,137 +158,281 @@
 
 <!-- SERVICES -->
 <section class="section services-section" id="services">
-<div class="container">
+  <div class="container">
 
-<div class="section-heading">
-<h2>Tech Repairs Done Properly from the Start</h2>
-<p>
-Every device is carefully diagnosed before any work begins, with clear recommendations and no unnecessary repairs - so you get the right fix the first time.
-</p>
-</div>
+    <div class="section-inner">
 
-<div class="service-grid">
+      <div class="section-heading">
+        <h2 class="section-title">Our Services</h2>
+      </div>
 
-<div class="service-card">
-<h3><i class="fas fa-mobile-alt"></i> Phone Repairs</h3>
-<p>Fix cracked screens, battery issues and charging faults quickly - keeping your phone working reliably every day.</p>
-</div>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3><i class="fas fa-mobile-alt"></i> Phone Repairs</h3>
+          <p>Fix cracked screens, battery issues and charging faults quickly - keeping your phone working reliably every day.</p>
+        </div>
 
-<div class="service-card">
-<h3><i class="fas fa-laptop"></i> Laptop & Macs</h3>
-<p>Repair Windows laptops, MacBooks and iMacs - resolving hardware faults, performance issues and system failures.</p>
-</div>
+        <div class="service-card">
+          <h3><i class="fas fa-laptop"></i> Laptop & Macs</h3>
+          <p>Repair Windows laptops, MacBooks and iMacs - resolving hardware faults, performance issues and system failures.</p>
+        </div>
 
-<div class="service-card featured">
-<h3><i class="fas fa-desktop"></i> Advanced Computer Repairs</h3>
-<p>Diagnose and repair complex faults, including motherboard issues, component-level work and performance upgrades.</p>
-</div>
+        <div class="service-card featured">
+          <h3><i class="fas fa-desktop"></i> Advanced Computer Repairs</h3>
+          <p>Diagnose and repair complex faults, including motherboard issues, component-level work and performance upgrades.</p>
+        </div>
 
-<div class="service-card">
-<h3><i class="fas fa-database"></i> Data Recovery</h3>
-<p>Recover lost or deleted files from damaged or failing drives - even in complex or critical situations.</p>
-</div>
+        <div class="service-card">
+          <h3><i class="fas fa-database"></i> Data Recovery</h3>
+          <p>Recover lost or deleted files from damaged or failing drives - even in complex or critical situations.</p>
+        </div>
 
-<div class="service-card">
-<h3><i class="fas fa-microchip"></i> Custom Gaming PC Builds</h3>
-<p>High-performance custom PC builds designed and assembled for gaming, streaming or professional workloads.</p>
-</div>
+        <div class="service-card">
+          <h3><i class="fas fa-microchip"></i> Custom Gaming PC Builds</h3>
+          <p>High-performance custom PC builds designed and assembled for gaming, streaming or professional workloads.</p>
+        </div>
 
-<div class="service-card">
-<h3><i class="fas fa-gamepad"></i> Console Repairs</h3>
-<p>Fix HDMI ports, overheating and power faults - restoring performance with reliable, long-lasting repairs.</p>
-</div>
+        <div class="service-card">
+          <h3><i class="fas fa-gamepad"></i> Console Repairs</h3>
+          <p>Fix HDMI ports, overheating and power faults - restoring performance with reliable, long-lasting repairs.</p>
+        </div>
 
-<div class="service-card">
-<h3><i class="fas fa-house"></i> Home Visits</h3>
-<p>Get expert support at your home with convenient on-site repairs, setup and troubleshooting.</p>
-</div>
+        <div class="service-card">
+          <h3><i class="fas fa-house"></i> Home Visits</h3>
+          <p>Get expert support at your home with convenient on-site repairs, setup and troubleshooting.</p>
+        </div>
 
-<div class="service-card">
-<h3><i class="fas fa-briefcase"></i> Business IT Support</h3>
-<p>Reliable support for businesses, including troubleshooting, maintenance and ongoing technical assistance.</p>
-</div>
+        <div class="service-card">
+          <h3><i class="fas fa-briefcase"></i> Business IT Support</h3>
+          <p>Reliable support for businesses, including troubleshooting, maintenance and ongoing technical assistance.</p>
+        </div>
 
-<div class="service-card">
-<h3><i class="fas fa-gears"></i> Setup, Optimisation & Security</h3>
-<p>Set up your device, transfer your data, remove viruses and optimise performance - keeping everything secure and running smoothly.</p>
-</div>
+        <div class="service-card">
+          <h3><i class="fas fa-gears"></i> Setup, Optimisation & Security</h3>
+          <p>Set up your device, transfer your data, remove viruses and optimise performance - keeping everything secure and running smoothly.</p>
+        </div>
+      </div>
 
-</div>
-</div>
+    </div>
+
+  </div>
 </section>
+
+
 
 <!-- PROCESS -->
 <section class="section process-section" id="process">
-<div class="container">
-
-<div class="section-heading">
-<h2>Repairs Done Right from Start to Finish</h2>
-<p>A clear and honest process so you always know what to expect.</p>
-</div>
-
-<div class="service-grid">
-
-<div class="service-card">
-<h3><span class="step">01</span> <i class="fas fa-phone"></i> Get in Touch</h3>
-<p>Call, message or visit us to tell us about your issue.</p>
-</div>
-
-<div class="service-card">
-<h3><span class="step">02</span> <i class="fas fa-magnifying-glass"></i> Diagnosis</h3>
-<p>We carefully diagnose the problem and explain your options clearly.</p>
-</div>
-
-<div class="service-card">
-<h3><span class="step">03</span> <i class="fas fa-file-invoice"></i> Quote & Approval</h3>
-<p>You receive a clear, no-obligation quote before any work begins.</p>
-</div>
-
-<div class="service-card">
-<h3><span class="step">04</span> <i class="fas fa-wrench"></i> Repair & Return</h3>
-<p>We complete the repair quickly and return your device fully working.</p>
-</div>
-
-</div>
-
-</div>
-<!-- ✅ REVIEWS -->
-<section class="section reviews-section" id="reviews">
-
   <div class="container">
 
-    <!-- ✅ HEADING -->
-    <div class="section-heading">
-      <h2>Trusted by Customers Across Teesside</h2>
-      <p>See what our customers say about our repairs, service and support.</p>
+    <div class="section-inner">
+
+      <div class="section-heading">
+        <h2 class="section-title">How It Works</h2>
+      </div>
+
+      <div class="process-grid">
+
+        <div class="service-card">
+          <h3>
+            <span class="step">01</span>
+            <i class="fas fa-phone service-icon"></i>
+            <span>Get in Touch</span>
+          </h3>
+          <p>Call, message or visit us to tell us about your issue.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>
+            <span class="step">02</span>
+            <i class="fas fa-magnifying-glass service-icon"></i>
+            <span>Diagnosis</span>
+          </h3>
+          <p>We carefully diagnose the problem and explain your options clearly.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>
+            <span class="step">03</span>
+            <i class="fas fa-file-invoice service-icon"></i>
+            <span>Quote &amp; Approval</span>
+          </h3>
+          <p>You receive a clear, no-obligation quote before any work begins.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>
+            <span class="step">04</span>
+            <i class="fas fa-wrench service-icon"></i>
+            <span>Repair &amp; Return</span>
+          </h3>
+          <p>We complete the repair quickly and return your device fully working.</p>
+        </div>
+
+      </div>
+
     </div>
 
-    <!-- ✅ TRUST BAR -->
-    <div class="review-trust-bar">
+  </div>
+</section>
+<!-- PRICE SECTION -->
+<section class="section price-section" id="pricing">
+  <div class="container">
 
-      <div class="trust-pill">
-        <i class="fab fa-google"></i>
-        <span><strong>5.0</strong> Google • 1000+ Reviews</span>
+    <div class="section-inner">
+
+      <div class="section-heading">
+        <h2 class="section-title">Our Pricing</h2>
       </div>
 
-      <div class="trust-pill">
-        <i class="fa-solid fa-star"></i>
-        <span><strong>4.9</strong> Trustpilot • 222 Reviews</span>
-      </div>
+      <div class="price-grid">
 
-      <div class="trust-pill">
-        <i class="fas fa-check-circle"></i>
-        <span>Yell Verified</span>
-      </div>
+        <!-- Phone Repairs -->
+        <div class="price-card">
+          <h3><i class="fas fa-mobile-alt"></i> Phone Repairs</h3>
+          <ul class="price-list">
+            <li><span>Screen Replacement</span><span>£60–£140</span></li>
+            <li><span>Battery Replacement</span><span>£49</span></li>
+            <li><span>Charging Port Repair</span><span>£59</span></li>
+            <li><span>Data Transfer</span><span>£40</span></li>
+          </ul>
+          <a href="#" class="price-btn">Book Repair</a>
+        </div>
 
-      <div class="trust-pill">
-        <i class="fab fa-facebook"></i>
-        <span>Recommended on Facebook</span>
+        <!-- Laptop & Macs -->
+        <div class="price-card featured">
+          <h3><i class="fas fa-laptop"></i> Laptop & Mac</h3>
+          <ul class="price-list">
+            <li><span>Screen Replacement</span><span>£120–£200</span></li>
+            <li><span>Keyboard Replacement</span><span>From £90</span></li>
+            <li><span>Battery Replacement</span><span>£99</span></li>
+            <li><span>SSD Upgrade</span><span>£80</span></li>
+            <li><span>DC Jack Repair</span><span>£80–£140</span></li>
+          </ul>
+          <a href="#" class="price-btn">Get Quote</a>
+        </div>
+
+        <!-- Tablet Repairs -->
+        <div class="price-card">
+          <h3><i class="fas fa-tablet-alt"></i> Tablets</h3>
+          <ul class="price-list">
+            <li><span>Screen Replacement</span><span>£80–£150</span></li>
+            <li><span>Battery Replacement</span><span>£79</span></li>
+            <li><span>Charging Port Repair</span><span>£69</span></li>
+          </ul>
+          <a href="#" class="price-btn">Book Repair</a>
+        </div>
+
+        <!-- Console Repairs -->
+        <div class="price-card">
+          <h3><i class="fas fa-gamepad"></i> Consoles</h3>
+          <ul class="price-list">
+            <li><span>HDMI Port Repair</span><span>£59</span></li>
+            <li><span>Overheating Service</span><span>£49</span></li>
+            <li><span>Switch Charging Port</span><span>£59</span></li>
+            <li><span>Controller Repair</span><span>£39</span></li>
+          </ul>
+          <a href="#" class="price-btn">Book Repair</a>
+        </div>
+
+        <!-- Data & Software -->
+        <div class="price-card">
+          <h3><i class="fas fa-hdd"></i> Data & Software</h3>
+          <ul class="price-list">
+            <li><span>Windows / macOS Install</span><span>£60</span></li>
+            <li><span>Virus Removal</span><span>£50</span></li>
+            <li><span>Data Recovery</span><span>From £120</span></li>
+            <li><span>Password Removal</span><span>£50</span></li>
+          </ul>
+          <a href="#" class="price-btn">Get Help</a>
+        </div>
+
+        <!-- Advanced Repairs -->
+        <div class="price-card">
+          <h3><i class="fas fa-tools"></i> Advanced Repairs</h3>
+          <ul class="price-list">
+            <li><span>Motherboard Repair</span><span>From £90</span></li>
+            <li><span>Micro Soldering</span><span>From £100</span></li>
+            <li><span>Component-Level Repair</span><span>From £100</span></li>
+          </ul>
+          <a href="#" class="price-btn">Request Quote</a>
+        </div>
+
+        <!-- Upgrades -->
+        <div class="price-card">
+          <h3><i class="fas fa-microchip"></i> Upgrades</h3>
+          <ul class="price-list">
+            <li><span>SSD Upgrade</span><span>£50</span></li>
+            <li><span>RAM Upgrade</span><span>£40</span></li>
+            <li><span>Custom PC Build</span><span>From £100</span></li>
+          </ul>
+          <a href="#" class="price-btn">Start Build</a>
+        </div>
+
+        <!-- Maintenance -->
+        <div class="price-card">
+          <h3><i class="fas fa-fan"></i> Maintenance</h3>
+          <ul class="price-list">
+            <li><span>PC Deep Clean</span><span>£50</span></li>
+            <li><span>Thermal Service</span><span>£50</span></li>
+            <li><span>Health Check</span><span>£30</span></li>
+          </ul>
+          <a href="#" class="price-btn">Book Service</a>
+        </div>
+
+        <!-- Setup & Support -->
+        <div class="price-card">
+          <h3><i class="fas fa-home"></i> Setup & Support</h3>
+          <ul class="price-list">
+            <li><span>New Device Setup</span><span>£40</span></li>
+            <li><span>Printer Setup</span><span>£30</span></li>
+            <li><span>Wi-Fi Setup</span><span>£40</span></li>
+            <li><span>Home Visit</span><span>£40/hr</span></li>
+          </ul>
+          <a href="#" class="price-btn">Book Visit</a>
+        </div>
+
       </div>
 
     </div>
 
-<!-- ✅ REVIEW GRID -->
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews-section" id="reviews">
+  <div class="container">
+
+    <div class="section-inner">
+
+      <!-- HEADING -->
+      <div class="section-heading">
+        <h2 class="section-title">Trusted Across Teesside</h2>
+      </div>
+
+      <!-- TRUST BADGES -->
+      <div class="review-badges">
+        <span class="badge">
+          ⭐ 5.0 Google<br>
+          600+ Reviews
+        </span>
+
+        <span class="badge">
+          ⭐ 4.9 Trustpilot<br>
+          222 Reviews
+        </span>
+
+        <span class="badge">
+          ⭐ 5.0 Yell<br>
+          190+ Reviews
+        </span>
+
+        <span class="badge">
+          👍 100% Recommended<br>
+          Facebook • 102+ Reviews
+        </span>
+      </div>
+
+      <!-- REVIEW GRID -->
 <div class="review-grid">
 
   <!-- 1 -->
@@ -351,7 +516,7 @@ Every device is carefully diagnosed before any work begins, with clear recommend
     <span class="review-meta"><strong>Craig S</strong> • Trustpilot • Mar 2024</span>
   </div>
 
-  <!-- ✅ NEW: YELL (VALUE) -->
+  <!-- 10 -->
   <div class="review-card">
     <div class="review-stars">
       <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -360,7 +525,7 @@ Every device is carefully diagnosed before any work begins, with clear recommend
     <span class="review-meta"><strong>Steve V</strong> • Yell • Sep 2025</span>
   </div>
 
-  <!-- ✅ NEW: YELL (TECH + COMMUNICATION) -->
+  <!-- 11 -->
   <div class="review-card">
     <div class="review-stars">
       <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -369,7 +534,7 @@ Every device is carefully diagnosed before any work begins, with clear recommend
     <span class="review-meta"><strong>Julia P</strong> • Yell • Jul 2025</span>
   </div>
 
-  <!-- ✅ NEW: FACEBOOK (PREMIUM SERVICE) -->
+  <!-- 12 -->
   <div class="review-card">
     <div class="review-stars">
       <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -380,20 +545,449 @@ Every device is carefully diagnosed before any work begins, with clear recommend
 
 </div>
 
+      <!-- CTA -->
+      <div class="reviews-cta">
+        <a href="https://www.google.com/search?q=teessidetek+reviews" target="_blank" class="btn btn-primary">
+          View All Reviews
+        </a>
+      </div>
 
-<!-- ✅ CTA -->
-<div class="reviews-cta">
-  <a href="https://www.google.com/search?q=teessidetek+reviews" target="_blank" class="btn btn-primary">
-    View All Reviews
-  </a>
-</div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- TECH / BRANDS -->
+<section class="section tech-strip" id="tech">
+
+  <div class="container">
+
+    <div class="section-inner">
+
+      <!-- HEADING -->
+      <div class="section-heading">
+        <h2 class="section-title">
+          Expert Repairs. All Platforms
+        </h2>
+      </div>
+
+      <!-- SLIDER -->
+      <div class="tech-slider">
+        <div class="tech-track">
+
+          <!-- SET 1 -->
+          <div class="tech-item">
+            <iconify-icon icon="simple-icons:apple"></iconify-icon>
+            <span>Apple</span>
+          </div>
+
+          <div class="tech-item">
+            <iconify-icon icon="simple-icons:microsoft"></iconify-icon>
+            <span>Microsoft</span>
+          </div>
+
+          <div class="tech-item">
+            <iconify-icon icon="logos:windows"></iconify-icon>
+            <span>Windows</span>
+          </div>
+
+          <div class="tech-item">
+            <iconify-icon icon="simple-icons:android"></iconify-icon>
+            <span>Android</span>
+          </div>
+
+          <div class="tech-item">
+            <iconify-icon icon="simple-icons:intel"></iconify-icon>
+            <span>Intel</span>
+          </div>
+
+          <div class="tech-item">
+            <iconify-icon icon="simple-icons:amd"></iconify-icon>
+            <span>AMD</span>
+          </div>
+
+          <div class="tech-item">
+            <iconify-icon icon="simple-icons:nvidia"></iconify-icon>
+            <span>Nvidia</span>
+          </div>
+
+          <div class="tech-item">
+            <iconify-icon icon="simple-icons:playstation"></iconify-icon>
+            <span>PlayStation</span>
+          </div>
+
+          <div class="tech-item">
+            <iconify-icon icon="simple-icons:xbox"></iconify-icon>
+            <span>Xbox</span>
+          </div>
+
+          <div class="tech-item">
+            <iconify-icon icon="mdi:controller-classic-outline"></iconify-icon>
+            <span>PC Gaming</span>
+          </div>
+
+          <!-- DUPLICATE FOR LOOP -->
+          <!-- (needed for smooth scroll) -->
+
+          <div class="tech-item">
+            <iconify-icon icon="simple-icons:apple"></iconify-icon>
+            <span>Apple</span>
+          </div>
+
+          <div class="tech-item">
+            <iconify-icon icon="simple-icons:microsoft"></iconify-icon>
+            <span>Microsoft</span>
+          </div>
+
+          <div class="tech-item">
+            <iconify-icon icon="logos:windows"></iconify-icon>
+            <span>Windows</span>
+          </div>
+
+          <div class="tech-item">
+            <iconify-icon icon="simple-icons:android"></iconify-icon>
+            <span>Android</span>
+          </div>
+
+          <div class="tech-item">
+            <iconify-icon icon="simple-icons:intel"></iconify-icon>
+            <span>Intel</span>
+          </div>
+
+          <div class="tech-item">
+            <iconify-icon icon="simple-icons:amd"></iconify-icon>
+            <span>AMD</span>
+          </div>
+
+          <div class="tech-item">
+            <iconify-icon icon="simple-icons:nvidia"></iconify-icon>
+            <span>Nvidia</span>
+          </div>
+
+          <div class="tech-item">
+            <iconify-icon icon="simple-icons:playstation"></iconify-icon>
+            <span>PlayStation</span>
+          </div>
+
+          <div class="tech-item">
+            <iconify-icon icon="simple-icons:xbox"></iconify-icon>
+            <span>Xbox</span>
+          </div>
+
+          <div class="tech-item">
+            <iconify-icon icon="mdi:controller-classic-outline"></iconify-icon>
+            <span>PC Gaming</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
+
+
+
+
+
+
+<!-- LOCATION -->
+<section class="section location-section" id="location">
+
+  <div class="container">
+
+    <div class="section-inner">
+
+      <!-- HEADING -->
+      <div class="section-heading">
+        <h2 class="section-title">Find Us in Middlesbrough</h2>
+      </div>
+
+      <!-- CONTENT GRID -->
+      <div class="location-grid">
+
+        <!-- LEFT: TEXT -->
+        <div class="location-text">
+          <p><strong>592 Acklam Road</strong><br>Middlesbrough, TS5 8BQ</p>
+
+          <p>We operate from a residential premises with parking.</p>
+
+          <p>
+            📧 teessidetek@gmail.com<br>
+            📞 07859897698
+          </p>
+        </div>
+
+        <!-- RIGHT: MAP -->
+        <div class="location-map">
+          <iframe 
+            src="https://www.google.com/maps?q=592+Acklam+Road+Middlesbrough&output=embed"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
-</main>
+<!-- FAQ -->
+<section class="section faq-section" id="faq">
+  <div class="container">
 
-<script src="script.js"></script>
+    <div class="section-inner">
 
+      <!-- ✅ HEADING BLOCK -->
+      <div class="section-heading">
+        <h2 class="section-title">FAQs</h2>
+      </div>
+
+      <!-- FAQ LIST -->
+      <div class="faq-list">
+
+        <!-- FIRST ITEM OPEN -->
+        <div class="faq-item active">
+          <button class="faq-question">
+            How long do repairs take?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Most repairs are completed the same day or within 1–3 working days depending on the issue.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you keep my data safe?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes — we never access or delete your data without permission. Backup services are also available if needed.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you offer same-day repairs?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes, many common repairs like screen replacements, battery changes, and software fixes are completed the same day.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you provide a warranty?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes — all repairs include a warranty for peace of mind.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you charge for diagnostics?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            We provide transparent pricing with no hidden fees. You'll always know the cost before we proceed.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Can you come to my home?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes — we offer home visits for setup, troubleshooting, and repairs where suitable.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+  <div class="container">
+
+    <div class="section-inner">
+
+      <!-- ✅ HEADING -->
+      <div class="section-heading">
+        <h2 class="section-title">Contact Us</h2>
+      </div>
+
+      <!-- ✅ GRID -->
+      <div class="contact-grid">
+
+        <!-- LEFT -->
+        <div class="contact-card">
+          <h3>Get in touch</h3>
+
+          <p class="contact-note">
+            We usually respond within 10–30 minutes during working hours.
+          </p>
+
+          <a href="tel:07859897698" class="contact-link">
+            📞 Call: 07859897698
+          </a>
+
+          <a href="https://wa.me/447859897698" class="contact-link">
+            💬 WhatsApp us
+          </a>
+
+          <a href="mailto:teessidetek@gmail.com" class="contact-link">
+            ✉️ Email us
+          </a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="contact-card">
+          <h3>Quick Enquiry</h3>
+
+          <form action="https://formspree.io/f/xkoaqklw" method="POST" class="contact-form">
+
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="tel" name="phone" placeholder="Phone number" required>
+            <input type="email" name="email" placeholder="Your email (optional)">
+
+            <textarea name="message" rows="4" placeholder="What do you need help with?" required></textarea>
+
+            <input type="hidden" name="_subject" value="New Repair Enquiry">
+            <input type="text" name="_gotcha" style="display:none">
+
+            <button type="submit" class="contact-btn">
+              Send Message
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <!-- BUSINESS -->
+    <div class="footer-col">
+      <h3>TeessideTek</h3>
+      <p class="footer-tag">
+        Fast, reliable repair services for phones, laptops, consoles and more.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:07XXXXXXXXX">📞 07XXX XXX XXX</a>
+      <a href="mailto:you@email.com">✉️ you@email.com</a>
+      <a href="https://wa.me/447XXXXXXXXX">💬 WhatsApp</a>
+    </div>
+
+    <!-- LOCATION -->
+    <div class="footer-col">
+      <h4>Location</h4>
+      <p>Middlesbrough</p>
+      <p>United Kingdom</p>
+    </div>
+
+  </div>
+
+  <!-- bottom bar -->
+  <div class="footer-bottom">
+    <p>© 2026 TeessideTek. All rights reserved.</p>
+  </div>
+</footer>
+<!-- ✅ WHATSAPP FLOAT -->
+<a href="https://wa.me/447859897698" class="whatsapp-float">
+  💬 Chat
+</a>
+
+<script>
+  // your existing JS
+</script>
+
+</body>
+</html>
+``
+<script>
+  const form = document.querySelector(".contact-form");
+
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+    const action = form.action;
+
+    fetch(action, {
+      method: "POST",
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(() => {
+      form.innerHTML = "<p style='color:#00ff9c;'>✅ Thanks! We'll get back to you shortly.</p>";
+    });
+  });
+</script>
+
+<script>
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const button = item.querySelector('.faq-question');
+
+    button.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+</script>
+<script>
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const button = item.querySelector('.faq-question');
+
+    button.addEventListener('click', () => {
+
+      // close others (accordion style ✅)
+      faqItems.forEach(i => {
+        if (i !== item) i.classList.remove('active');
+      });
+
+      // toggle current
+      item.classList.toggle('active');
+    });
+  });
+</script>
+
+
+<script src="script.js" defer></script>
 </body>
 </html>
